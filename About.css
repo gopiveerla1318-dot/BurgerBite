@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  width: 100%;
+  height: 110vh;
+  background:#0A2947;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  background:#F3E4C9;
+  border-radius: 50%;
+  bottom: -750px;
+  right: -250px;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #D3D4C0;
+  border-radius: 50%;
+  top: 120px;
+  right: -170px;
+  z-index: 2;
+}
+
+/* == NAVBAR === */
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff5c35;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 45px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff5c35;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background: #ff5c35;
+  padding: 15px 35px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: teal;
+  color: whitesmoke;
+}
+
+/* ================= CONTENT ================= */
+
+.left {
+  position: absolute;
+  left: 7%;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 470px;
+  z-index: 10;
+}
+
+.left span {
+  color:goldenrod;
+  font-size: 20px;
+}
+
+.left h1 {
+  color: white;
+  font-size: 60px;
+  line-height: 65px;
+  margin: 12px 0;
+  font-weight: 800;
+}
+
+.left p {
+  color: goldenrod;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: white;
+  background: #ff5c35;
+  padding: 18px 45px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background: navy;
+  color: whitesmoke;
+  transition: 1s;
+}
+
+/* ================= BURGER IMAGE ================= */
+
+.right {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  z-index: 20;
+}
+img {
+  height: 700px;
+}
+
+/* ======= === About section ===== =====*/
+
+.about {
+  background:#8B5E3C;
+  clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+.about {
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+.about-image img{
+  border-radius: 50px;
+  margin-top: 100px;
+  
+}
+.about-content {
+  flex: 1;
+  
+}
+
+.about-content h4 {
+  color: navy;
+  font-size: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  margin-right: 100px;
+}
+
+.about-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing:3px;
+}
+
+.about-content p {
+  color:orangered;
+  line-height: 30px;
+  margin-bottom: 35px;
+  font-family:cursive;
+  font-weight: bold;
+}
+
+.about-boxes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.box {
+  flex: 1;
+  background: #fff;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow:0 0 3px 5px whitesmoke;
+  transition: 0.3s;
+  border: none;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+}
+
+.box h3 {
+  color: #ff4d30;
+  font-size: 36px;
+}
+
+.box span {
+  color: #666;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-boxes {
+    flex-direction: column;
+  }
+}
+
